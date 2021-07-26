@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Document</title>
+
+</head>
+
+<body>
+  <div class="container" style="text-align: center;">
+    <header class="jumbtron" style="background-color: #1d2adb; color: white;">
+      <h1>Sistema de verificação do uso de máscara</h1>
+      <p>Rosto sem máscara, Rosto com máscara e Uso inadequado da máscara</p>
+    </header>
+    <h2>O uso da máscara para prevenção do Covid-19</h2>
+    <p>
+      A covid-19, doença causada pelo coronavírus SARS-Cov-2, é transmitida principalmente por meio do contato com pequenas gotículas que contêm o vírus e são expelidas por pessoas infectadas. Elas entram em contato com as nossas vias aéreas, e novo coronavírus pode começar a se multiplicar no nosso corpo. Portanto, o uso de máscaras é importante como medida de proteção tanto para você mesmo quanto para as pessoas a seu redor.
+      As máscaras funcionam como uma barreira física para a liberação dessas gotículas no ar quando há tosse, espirros e até mesmo durante conversas. Seu uso é importante principalmente em locais em que não é possível manter uma distância mínima de segurança. Apesar de sua eficácia, seu uso deve ser acompanhado de outras medidas de proteção como limpeza frequente das mãos e distanciamento físico de 2 metros de outras pessoas.
+    </p>
+    <p>
+      A idéia principal desse trabalho é a verificação do uso de máscara, iniciando a verificação pode ser constatado três parâmetros, sendo eles: Rosto sem máscara, Rosto com máscara e Uso errado da máscara.
+      Utilize a máscara da forma correta para evitar contágio e transmissão da doença!
+    </p>
+    <div id="webcam-container"></div>
+    <div class="display-4" id="label-container"></div>
+    <button type="button" class="btn btn-primary" onclick="init()">Iniciar Verificação</button>
+
+
+    <footer class="panel-footer" style="text-align:center; background-color: #1d2adb; color: white">
+      Todos direitos reservados - Luis Felipe, Luis Otávio e Michel Correa - Sistemas de Informação - IFSULDEMINAS -
+      Campus Machado
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script src='tensor.js'></script>
+</body>
+
+</html>
